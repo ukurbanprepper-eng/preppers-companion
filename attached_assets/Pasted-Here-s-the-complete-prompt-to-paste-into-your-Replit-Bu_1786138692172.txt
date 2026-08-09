@@ -1,0 +1,44 @@
+Here's the complete prompt to paste into your Replit Build chat — it includes the finished policy text with your date and email already filled in.
+
+Please create a new page in my project at the route /privacy (e.g. privacy.html, or add a route if this is a framework like Next.js/Express — check what fits my project structure). It should be publicly accessible at my-app-url.replit.app/privacy with no login required. Use this exact content:
+
+# Privacy Policy for Prepper's Companion
+
+**Last updated: August 7, 2026**
+
+Prepper's Companion ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
+
+## Information We Collect
+
+Prepper's Companion stores your pantry, medicine, and health tracking data entirely on your own device. We do not collect, transmit, or store any of this data on external servers — the App has no backend, and nothing you enter ever leaves your device.
+
+## How We Use Information
+
+Any data you enter into the App (pantry items, medicine tracking, health calculator inputs) is used solely to provide the App's core functionality, locally on your device.
+
+## Data Sharing
+
+We do not collect, sell, trade, or share your personal information with any third parties, because we do not have access to it in the first place.
+
+## Data Storage & Security
+
+All data is stored locally on your device using your browser's/device's local storage. It is not backed up to any cloud service by the App. If you uninstall the App or clear your browser data, this information will be permanently deleted.
+
+## Children's Privacy
+
+Prepper's Companion is not directed at children under 13, and we do not knowingly collect personal information from children, as the App does not collect personal information from anyone.
+
+## Your Choices
+
+You can delete your stored data at any time using the "Clear Pantry" and "Clear Medicines" options within the App's Settings.
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.
+
+## Contact Us
+
+If you have questions about this Privacy Policy, contact us at:
+**ukurbanprepper@gmail.com**
+
+Please style the page to match the app's existing dark theme (olive green accents, dark navy background) so it looks consistent with the rest of the app, and confirm the final live URL once it's deployed.

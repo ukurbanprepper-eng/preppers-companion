@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ukurbanprepper.prepperscompanion",
+        "sha256_cert_fingerprints": ["71:B7:26:36:00:79:9C:CD:FB:65:5B:BE:1F:8A:D7:A2:4F:1D:64:F4:6E:65:FA:71:99:77:97:51:27:98:A7:C2"]
+      }
+    }]

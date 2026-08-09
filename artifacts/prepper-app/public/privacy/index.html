@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Prepper's Companion</title>
+    <meta name="description" content="Privacy Policy for Prepper's Companion emergency readiness app." />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#566E3C" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --bg:        #0D1017;
+        --card:      #141923;
+        --border:    #232C39;
+        --primary:   #566E3C;
+        --primary-fg:#0D1017;
+        --fg:        #E8EDF3;
+        --muted-fg:  #7E8FA4;
+        --muted:     #1C2330;
+      }
+
+      html, body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+
+      a { color: var(--primary); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      /* ── Header ── */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--border);
+        background: rgba(20,25,35,0.92);
+        backdrop-filter: blur(8px);
+      }
+      .header-inner {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .badge {
+        background: var(--primary);
+        border-radius: 8px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .badge svg { width: 18px; height: 18px; }
+      .brand-name {
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        line-height: 1.2;
+      }
+      .brand-sub {
+        font-size: 11px;
+        color: var(--muted-fg);
+        font-family: 'JetBrains Mono', monospace;
+        letter-spacing: 0.3px;
+      }
+      .back-link {
+        margin-left: auto;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--muted-fg);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        transition: color 0.15s;
+      }
+      .back-link:hover { color: var(--fg); text-decoration: none; }
+
+      /* ── Main content ── */
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+
+      /* Hero */
+      .hero {
+        margin-bottom: 40px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--border);
+      }
+      .hero-badge {
+        display: inline-block;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--primary);
+        background: rgba(86,110,60,0.12);
+        border: 1px solid rgba(86,110,60,0.3);
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: clamp(26px, 5vw, 36px);
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+      .last-updated {
+        font-size: 13px;
+        color: var(--muted-fg);
+        font-family: 'JetBrains Mono', monospace;
+      }
+
+      /* Sections */
+      section {
+        margin-bottom: 36px;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      h2::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 18px;
+        background: var(--primary);
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      p {
+        color: var(--muted-fg);
+        margin-bottom: 12px;
+      }
+      p:last-child { margin-bottom: 0; }
+
+      /* Highlight card */
+      .highlight {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--primary);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 12px;
+        color: var(--fg);
+        font-size: 15px;
+      }
+
+      /* Contact */
+      .contact-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .contact-icon {
+        width: 44px;
+        height: 44px;
+        background: rgba(86,110,60,0.15);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .contact-icon svg { width: 20px; height: 20px; color: var(--primary); }
+      .contact-label { font-size: 12px; color: var(--muted-fg); margin-bottom: 2px; }
+      .contact-email { font-weight: 600; font-size: 15px; color: var(--fg); }
+
+      /* Footer */
+      footer {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 24px;
+        border-top: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .footer-text {
+        font-size: 12px;
+        color: var(--muted-fg);
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .footer-link {
+        font-size: 12px;
+        color: var(--primary);
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <div class="badge">
+          <!-- Shield icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0D1017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Prepper's Companion</div>
+          <div class="brand-sub">Emergency Readiness Tool</div>
+        </div>
+        <a href="/" class="back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back to app
+        </a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="hero">
+        <div class="hero-badge">Legal</div>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: August 7, 2026</p>
+      </div>
+
+      <div class="highlight">
+        Prepper's Companion ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
+      </div>
+
+      <section>
+        <h2>Information We Collect</h2>
+        <p>Prepper's Companion stores your pantry, medicine, and health tracking data entirely on your own device. We do not collect, transmit, or store any of this data on external servers — the App has no backend, and nothing you enter ever leaves your device.</p>
+      </section>
+
+      <section>
+        <h2>How We Use Information</h2>
+        <p>Any data you enter into the App (pantry items, medicine tracking, health calculator inputs) is used solely to provide the App's core functionality, locally on your device.</p>
+      </section>
+
+      <section>
+        <h2>Data Sharing</h2>
+        <p>We do not collect, sell, trade, or share your personal information with any third parties, because we do not have access to it in the first place.</p>
+      </section>
+
+      <section>
+        <h2>Data Storage &amp; Security</h2>
+        <p>All data is stored locally on your device using your browser's/device's local storage. It is not backed up to any cloud service by the App. If you uninstall the App or clear your browser data, this information will be permanently deleted.</p>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>Prepper's Companion is not directed at children under 13, and we do not knowingly collect personal information from children, as the App does not collect personal information from anyone.</p>
+      </section>
+
+      <section>
+        <h2>Your Choices</h2>
+        <p>You can delete your stored data at any time using the "Clear Pantry" and "Clear Medicines" options within the App's Settings.</p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, contact us at:</p>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#566E3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">Email address</div>
+            <a href="mailto:ukurbanprepper@gmail.com" class="contact-email">ukurbanprepper@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span class="footer-text">© 2026 Prepper's Companion</span>
+      <a href="/" class="footer-link">← Back to app</a>
+    </footer>
+  </body>
+</html>

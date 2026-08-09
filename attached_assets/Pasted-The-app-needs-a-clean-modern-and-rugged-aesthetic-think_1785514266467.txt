@@ -1,0 +1,38 @@
+The app needs a clean, modern, and rugged aesthetic (think dark mode with muted greens and grays) and must be highly mobile-responsive. Use browser ⁠localStorage⁠ to ensure all user data persists on page refresh.
+Implement a multi-tab navigation layout with the following four views:
+Tab 1: Dashboard & Water Tracker
+This is the main overview screen.
+ Household Settings Inputs:
+ Number of People (integer input)
+ Daily Calorie Target per person (integer input, defaults to 2000)
+ Food Metrics Display:
+ Total Daily Calories Needed = (Number of People \times Daily Calorie Target)
+ Total Calories Stored (Summed dynamically from the Pantry tab)
+ Days of Food Remaining = (Total Calories Stored / Total Daily Calories Needed). Display this as a large, prominent visual metric.
+ Water Calculation Tool:
+ Inputs: Litres of water required per day per person (defaults to 4L), and Total Litres of Water Currently Stored.
+ Output: Dynamically calculate and display exactly how many days of water supply are available based on the number of people.
+Tab 2: The Prepper Pantry Inventory
+A comprehensive inventory tracker split into four distinct categories: Tinned, Dried, Freeze-Dried, and Other.
+ Item Structure: Every item in a list must display:
+ Item Name (Text)
+ Calories per Item (Number)
+ Current Quantity (Number input box that is directly typeable, flanked by a ⁠+⁠ button and a ⁠-⁠ button for quick adjustments)
+ Target Number of Items (Number input representing the ideal stock goal)
+ Features:
+ Allow users to add new custom items dynamically to any specific category.
+ Allow users to delete items.
+ Pre-populate the app with 2 dummy items per category on first load so it isn't blank.
+Tab 3: Smart Shopping List
+An automated list that tells the user exactly what to buy based on their inventory goals.
+ Logic: The app must automatically filter the pantry inventory. If an item's ⁠Current Quantity⁠ is less than its ⁠Target Number⁠, it must appear on this list.
+ Display: Show the Item Name, Category, and the Number Required to reach the goal (Target - Current).
+ Interaction: Include a checkbox next to each item to temporarily mark it as "collected".
+Tab 4: Health Tools (BMI & Calorie Calculator)
+A built-in utility to help users figure out their accurate daily survival calorie needs.
+ Inputs: Gender (Radio buttons), Age (Years), Weight (kg or lbs), Height (cm or inches), and Activity Level (Dropdown ranging from Sedentary to Very Active).
+ Calculations:
+ Calculate BMI (Weight / Height^2).
+ Calculate BMR using the Mifflin-St Jeor equation.
+ Calculate TDEE (Total Daily Energy Expenditure) based on the selected activity level.
+ Outputs: Display the user's BMI value/category and their recommended daily maintenance calories. Include an "Apply to Dashboard" button that automatically updates the Daily Calorie Target input on Tab 1 with this calculated number
